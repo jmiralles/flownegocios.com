@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - FlowNegocios Automatizaciones</title>
+    <style>
+        :root {
+            --color-bg: #f6f8fb;
+            --color-surface: #ffffff;
+            --color-text: #1f2937;
+            --color-muted: #6b7280;
+            --color-accent: #2563eb;
+            --color-accent-soft: #dbeafe;
+            --color-border: #e5e7eb;
+            --radius: 14px;
+            --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background:
+                radial-gradient(1200px 600px at 10% -10%, var(--color-accent-soft), transparent 60%),
+                radial-gradient(800px 400px at 110% 10%, #ede9fe, transparent 60%),
+                var(--color-bg);
+            padding: 48px 20px;
+        }
+
+        header,
+        main {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 0 8px 32px;
+        }
+
+        header h1 {
+            font-size: clamp(1.6rem, 2.4vw + 1rem, 2.4rem);
+            line-height: 1.2;
+            margin: 0 0 12px;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+        }
+
+        header time {
+            display: inline-block;
+            font-size: 0.9rem;
+            color: var(--color-muted);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            padding: 4px 12px;
+            border-radius: 999px;
+        }
+
+        main {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: clamp(24px, 4vw, 48px);
+        }
+
+        section + section {
+            margin-top: 28px;
+            padding-top: 28px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        section h2 {
+            font-size: 1.25rem;
+            margin: 0 0 12px;
+            color: #0f172a;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        section h2::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--color-accent);
+            transform: translateY(-3px);
+        }
+
+        section p {
+            margin: 0;
+            color: #374151;
+        }
+
+        section:first-child p {
+            font-size: 1.05rem;
+            color: #111827;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg: #0b1220;
+                --color-surface: #111a2e;
+                --color-text: #e5e7eb;
+                --color-muted: #9ca3af;
+                --color-accent: #60a5fa;
+                --color-accent-soft: rgba(96, 165, 250, 0.18);
+                --color-border: #1f2a44;
+                --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            }
+
+            header h1,
+            section h2 {
+                color: #f8fafc;
+            }
+
+            section p {
+                color: #cbd5e1;
+            }
+
+            section:first-child p {
+                color: #e2e8f0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Política de Privacidad de FlowNegocios Automatizaciones</h1>
+        <p><time datetime="2026-05">Última actualización: Mayo de 2026</time></p>
+    </header>
+
+    <main>
+        <section>
+            <p>En FlowNegocios estamos comprometidos con la privacidad de sus datos. Esta política de privacidad describe cómo nuestra instancia interna de automatización (n8n) interactúa con los datos de su cuenta de Google.</p>
+        </section>
+
+        <section aria-labelledby="acceso-uso">
+            <h2 id="acceso-uso">1. Acceso y Uso de Datos</h2>
+            <p>Nuestra aplicación solicita acceso a su cuenta de Google (específicamente a Google Sheets) con el único propósito de automatizar el registro de datos, análisis de métricas y la actualización de hojas de cálculo de forma interna. No utilizamos sus datos para ningún otro fin.</p>
+        </section>
+
+        <section aria-labelledby="almacenamiento">
+            <h2 id="almacenamiento">2. Almacenamiento de Datos</h2>
+            <p>Los datos obtenidos a través de las APIs de Google se procesan en tiempo real en nuestros servidores privados y seguros alojados en Hetzner. No almacenamos copias persistentes de sus hojas de cálculo en bases de datos externas, salvo los registros estrictamente necesarios para la ejecución y el historial de los flujos de trabajo automatizados.</p>
+        </section>
+
+        <section aria-labelledby="comparticion">
+            <h2 id="comparticion">3. Compartición de Datos con Terceros</h2>
+            <p>No vendemos, transferimos ni compartimos ningún dato del usuario de Google con terceras empresas, redes publicitarias ni plataformas analíticas externas. El uso de la información recibida a través de las APIs de Google se adhiere estrictamente a la Política de Datos del Usuario de los Servicios de API de Google.</p>
+        </section>
+
+        <section aria-labelledby="condiciones">
+            <h2 id="condiciones">4. Condiciones del Servicio</h2>
+            <p>Esta aplicación es de uso interno y privado para la optimización de flujos de trabajo de FlowNegocios.</p>
+        </section>
+    </main>
+</body>
+</html>
